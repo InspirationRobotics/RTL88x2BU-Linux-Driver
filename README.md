@@ -1,3 +1,14 @@
+# Setup
+Follow driver install using DKMS section. (You may need to install dkms with `sudo apt install dkms`)
+
+Then run `ifconfig` and note the interface name.
+
+Then to connect to wifi use the following syntax (substitute in your values where the allcaps are): 
+```
+sudo nmcli device wifi connect SSID password PASSWORD ifname INTERFACENAME
+```
+
+
 # REALTEK RTL88x2B USB Linux Driver
 **Current Driver Version**: 5.13.1-30
 **Support Kernel**: 2.6.24 ~ 6.10 (with unofficial patches)
